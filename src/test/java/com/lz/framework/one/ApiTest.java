@@ -12,7 +12,6 @@ import org.junit.Test;
  * @Author: LZ
  */
 public class ApiTest {
-
     @Test
     public void testBeanFactory() {
         // 初始化对应工厂
@@ -25,5 +24,4 @@ public class ApiTest {
         User user = (User) listableBeanFactory.getBean("user");
         user.add();
     }
-
 }

@@ -13,7 +13,6 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Author: LZ
  */
 public class DefaultSingletonBeanFactory implements BeanRegistry {
-
     private final Map<String, Object> singletonObjects = new ConcurrentHashMap<>();
 
     @Override

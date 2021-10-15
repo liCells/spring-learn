@@ -7,9 +7,7 @@ package com.lz.framework.one.beans;
  * @Author: LZ
  */
 public class User {
-
     public void add() {
         System.out.println("Success.");
     }
-
 }

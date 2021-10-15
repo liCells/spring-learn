@@ -7,7 +7,6 @@ package com.lz.framework.one.beans.factory.config;
  * @Author: LZ
  */
 public class BeanDefinition {
-
     private Class<?> bean;
 
     public BeanDefinition(Class<?> bean) {

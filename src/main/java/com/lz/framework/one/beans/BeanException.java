@@ -7,9 +7,7 @@ package com.lz.framework.one.beans;
  * @Author: LZ
  */
 public class BeanException extends RuntimeException {
-
     public BeanException(String msg) {
         super(msg);
     }
-
 }

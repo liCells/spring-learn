@@ -12,7 +12,6 @@ import lombok.NonNull;
  * @Author: LZ
  */
 public abstract class AbstractBeanFactory extends DefaultSingletonBeanFactory implements BeanFactory {
-
     @Override
     public Object getBean(@NonNull String beanName) {
         Object bean = get(beanName);

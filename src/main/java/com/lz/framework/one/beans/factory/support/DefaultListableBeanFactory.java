@@ -11,7 +11,6 @@ import java.util.Map;
  * @Author: LZ
  */
 public class DefaultListableBeanFactory extends AbstractAutowireBeanFactory implements BeanDefinitionRegistry {
-
     private final Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override
