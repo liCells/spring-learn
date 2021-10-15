@@ -15,12 +15,16 @@ public class DefaultListableBeanFactory extends AbstractAutowireBeanFactory impl
     private final Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override
-    protected BeanDefinition getBeanDefinition(String beanName) throws BeanException {
-        return null;
+    public BeanDefinition getBeanDefinition(String beanName) throws BeanException {
+        BeanDefinition beanDefinition = beanDefinitionMap.get(beanName);
+        if (beanDefinition == null) {
+            throw new BeanException("Not found bean, named is '" + beanName + "'.");
+        }
+        return beanDefinition;
     }
 
     @Override
     public void registerBeanDefinition(String beanName, BeanDefinition beanDefinition) {
-
+        beanDefinitionMap.put(beanName, beanDefinition);
     }
 }

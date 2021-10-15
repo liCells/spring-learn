@@ -2,7 +2,7 @@ package com.lz.framework.one;
 
 import com.lz.framework.one.beans.User;
 import com.lz.framework.one.beans.factory.config.BeanDefinition;
-import com.lz.framework.one.beans.factory.support.DefaultSingletonBeanFactory;
+import com.lz.framework.one.beans.factory.support.DefaultListableBeanFactory;
 import org.junit.Test;
 
 /**
@@ -16,13 +16,13 @@ public class ApiTest {
     @Test
     public void testBeanFactory() {
         // 初始化对应工厂
-        DefaultSingletonBeanFactory singletonBeanFactory = new DefaultSingletonBeanFactory();
+        DefaultListableBeanFactory listableBeanFactory = new DefaultListableBeanFactory();
 
         BeanDefinition beanDefinition = new BeanDefinition(User.class);
 
-        singletonBeanFactory.add("user", beanDefinition);
+        listableBeanFactory.registerBeanDefinition("user", beanDefinition);
 
-        User user = (User) singletonBeanFactory.get("user");
+        User user = (User) listableBeanFactory.getBean("user");
         user.add();
     }
 
