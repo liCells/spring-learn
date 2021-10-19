@@ -1,6 +1,6 @@
-package com.lz.framework.one.beans.factory.support;
+package com.lz.framework.beans.factory.support;
 
-import com.lz.framework.one.beans.factory.config.BeanDefinition;
+import com.lz.framework.beans.factory.config.BeanDefinition;
 
 /**
  * @Created: 21/10/14 13:51

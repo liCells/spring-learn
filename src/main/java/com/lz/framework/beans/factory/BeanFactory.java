@@ -1,4 +1,4 @@
-package com.lz.framework.one.beans.factory;
+package com.lz.framework.beans.factory;
 
 import lombok.NonNull;
 
@@ -10,4 +10,6 @@ import lombok.NonNull;
  */
 public interface BeanFactory {
     Object getBean(@NonNull String beanName);
+
+    Object getBean(@NonNull String beanName, Object... args);
 }

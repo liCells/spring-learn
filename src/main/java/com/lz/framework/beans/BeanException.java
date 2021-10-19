@@ -1,4 +1,4 @@
-package com.lz.framework.one.beans;
+package com.lz.framework.beans;
 
 /**
  * Bean异常
@@ -9,5 +9,8 @@ package com.lz.framework.one.beans;
 public class BeanException extends RuntimeException {
     public BeanException(String msg) {
         super(msg);
+    }
+    public BeanException(String msg, Throwable throwable) {
+        super(msg, throwable);
     }
 }

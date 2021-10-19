@@ -1,4 +1,4 @@
-package com.lz.framework.one.beans.factory.config;
+package com.lz.framework.beans.factory.config;
 
 /**
  * Bean的定义

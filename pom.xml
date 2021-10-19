@@ -20,6 +20,11 @@
             <version>1.18.22</version>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>org.sonatype.sisu.inject</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.1.1</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>

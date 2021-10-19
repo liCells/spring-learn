@@ -1,4 +1,4 @@
-package com.lz.framework.one.beans;
+package com.lz.framework.beans;
 
 /**
  * 测试注册bean
@@ -7,7 +7,16 @@ package com.lz.framework.one.beans;
  * @Author: LZ
  */
 public class User {
+    private String account;
+
     public void add() {
         System.out.println("Success.");
+    }
+
+    public User() {
+    }
+
+    public User(String account) {
+        this.account = account;
     }
 }

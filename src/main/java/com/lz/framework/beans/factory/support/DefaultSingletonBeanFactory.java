@@ -1,6 +1,6 @@
-package com.lz.framework.one.beans.factory.support;
+package com.lz.framework.beans.factory.support;
 
-import com.lz.framework.one.beans.factory.config.BeanRegistry;
+import com.lz.framework.beans.factory.config.BeanRegistry;
 import lombok.NonNull;
 
 import java.util.Map;
